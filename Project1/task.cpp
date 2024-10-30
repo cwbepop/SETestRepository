@@ -9,9 +9,9 @@ int inputData(double& a, double& b, double& h, int& n);
 void outputData(double a, double b, double h, int n);
 
 int main() {
-    //double x;
+    double x;
     double y;
-    double a, b, h, x;
+    double a, b, h;
     int n;
     int q;
     cout << "*****************************************************************************************************************************************************" << endl;
