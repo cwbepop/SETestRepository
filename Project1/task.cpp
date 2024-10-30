@@ -26,7 +26,7 @@ int main() {
 
         //y=find_y(x, n);
         outputData(a, b, h, n);
-        //cout<<"Result: "<<y<<endl;
+        
         cout << "Continue? (yes=1/no=0): ";
         cin >> q;
     } while (q == 1);
@@ -103,7 +103,7 @@ int inputData(double& a, double& b, double& h, int& n)
             cout << "Enter a: ";
             cin >> a;
             if (cin.fail()) {
-                cin.clear(); // Clear the error flag
+                cin.clear(); 
                 cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Ignore invalid input
                 cout << "Invalid input. Please enter a numeric value for a." << endl;
             }
