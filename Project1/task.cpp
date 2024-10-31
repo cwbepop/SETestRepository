@@ -72,7 +72,7 @@ int inputData(double& a, double& b, double& h, int& n)
     while (!(choice == 'f' || choice == 'F' || choice == 'k' || choice == 'K')) {
         cout << "Invalid choice. Please enter 'f' or 'F' for file, or 'k' or 'K' for keyboard: ";
         cin.clear(); // Clear error state
-        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Discard invalid input
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cin >> choice;
     }
 
@@ -93,7 +93,7 @@ int inputData(double& a, double& b, double& h, int& n)
                 file >> a >> b >> h >> n;
                 cout << a << " " << b << " " << h << " " << n << endl;
                 file.close();
-                break;  // Виходимо з циклу, якщо файл успішно відкрився
+                break;  
             }
         }
     }
